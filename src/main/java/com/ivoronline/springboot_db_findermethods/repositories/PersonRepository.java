@@ -5,7 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 public interface PersonRepository extends CrudRepository<Person, Integer> {
-  List<Person> findByName            (String name1);
-  Person       findPersonByName      (String name1);
-  Person       findPersonByNameAndAge(String name1, Integer age1);
+  List<Person> findByName            (String namePar);
+  Person       findPersonByName      (String namePar);
+  Person       findPersonByNameAndAge(String namePar, Integer agePar);
 }
